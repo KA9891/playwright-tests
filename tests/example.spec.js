@@ -1,7 +1,7 @@
 // @ts-check
 import { test, expect,chromium } from '@playwright/test';
 
-test.only('has title', async ({}) => {
+test('has title', async ({}) => {
   const browser = await chromium.launch({headless : false})
   const context = await browser.newContext();
   const page = await context.newPage();
